@@ -27,7 +27,7 @@ describe("Calculator", function() {
                                  expect(returnInteger("a")).toBe("Invalid");
                              }
                             );
-                          it("should return 'Invalid' when an invalid input is given", function() {
+                          it("should return 'Invalid' when no input is given", function() {
                                  expect(returnInteger()).toBe("Invalid");
                              }
                           );

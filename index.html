@@ -11,46 +11,59 @@
           media="screen">
     <link href="calc.css" rel="stylesheet" media="screen">
   </head>
- 
+  
   <body>
-    
-    <div class="row num-box">
-      <div class="col-lg-4">
-        <input type="text" class="form-control" id="number1" placeholder="Number 1">
+    <div class="container calculator">
+      <div class="row num-box">
+        <div class="col-lg-4">
+          <input type="text" class="form-control" id="number1" placeholder="Number 1">
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-1 col-lg-offset-2">
-        <h4> + <h4>
+ <!--     <div class="row">
+        <div class="col-lg-1 col-lg-offset-2">
+          <h4> + <h4>
+        </div>
+      </div> -->
+      
+      <div class="row num-box">
+        <div class="col-lg-4">
+          <input type="text" class="form-control" id="number2" placeholder="Number 2">
+        </div>
       </div>
-    </div>
-    
-    <div class="row num-box">
-      <div class="col-lg-4">
-        <input type="text" class="form-control" id="number2" placeholder="Number 2">
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-2 col-lg-offset-1">
-        <button type="button" class="btn btn-primary button-equals
-        num-box pagination-centered" onclick="equals()"> = </button>
-      </div>
-    </div>
-    
-    <div class="row num-box result-box">
-      <div class="col-lg-4">
-        <input type="text" class="form-control" id="result" placeholder="Result">
-      </div>
-    </div>
+      <!--      <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                  <button type="button" class="btn btn-primary button-equals
+                                               num-box pagination-centered" onclick="equals()"> = </button>
+                </div>
+      </div> -->
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+      <div class="row num-box button-group pagination-centered">
+        <div class="col-lg-4">
+          <button type="button" class="btn btn-primary operator
+                                       num-box pagination-centered" onclick="equals('+')"> + </button>
+          <button type="button" class="btn btn-primary operator
+                                       num-box pagination-centered" onclick="equals('-')"> - </button>
+          <button type="button" class="btn btn-primary operator
+                                       num-box pagination-centered" onclick="equals('*')"> * </button>
+          <button type="button" class="btn btn-primary operator
+                                       num-box pagination-centered" onclick="equals('/')"> / </button>
+        </div>
+      </div>
+ 
+        <div class="row num-box result-box">
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="result" placeholder="Result">
+          </div>
+        </div>
+      </div>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="bootstrap/js/respond.js"></script>
+      <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+      <script src="bootstrap/js/respond.js"></script>
   </body>
 
 </html>
