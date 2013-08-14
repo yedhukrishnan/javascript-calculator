@@ -5,6 +5,17 @@ describe("Calculator", function() {
                              }
                           );
                       }
-             );
+                     );
+             describe("returnInteger function", function() {
+                          it("should return integer value when string is passed", function() {
+                                 expect(returnInteger("5")).toEqual(5);
+                             }
+                          );
+                          it("should throw error when an invalid/no input is given", function() {
+                                 expect(returnInteger).toThrow();
+                             }
+                          );
+                      }
+                     );
          }
 );
